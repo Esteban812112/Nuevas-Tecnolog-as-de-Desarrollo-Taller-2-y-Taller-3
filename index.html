@@ -20,58 +20,42 @@
         <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="assets/mp4/bg.mp4" type="video/mp4" />
         </video>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Foro de Videojuegos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="historia.html">Historia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="foros-populares.html">Foros Populares</a></li>
+                        <li class="nav-item"><a class="nav-link" href="impacto.html">Impacto en la Industria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cultura.html">Cultura Gamer</a></li>
+                        <li class="nav-item"><a class="nav-link" href="conclusiones.html">Conclusiones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="equipo.html">Equipo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <!-- Masthead-->
         <div class="masthead">
             <div class="masthead-content text-white">
                 <div class="container-fluid px-4 px-lg-0">
                     <h1 class="fst-italic lh-1 mb-4">Foro de Videojuegos</h1>
                     <p class="mb-5">Comparte tu opinión sobre videojuegos con la comunidad.</p>
-                    
-                    <!-- Formulario de comentarios -->
-                    <div class="container mt-4">
-                        <div class="mb-3">
-                            <input type="text" id="username" class="form-control" placeholder="Tu nombre">
-                        </div>
-                        <div class="mb-3">
-                            <textarea id="commentText" class="form-control" rows="3" placeholder="Escribe tu comentario..."></textarea>
-                        </div>
-                        <button class="btn btn-primary" onclick="addComment()">Publicar</button>
-                    </div>
-                    
-                    <!-- Lista de comentarios -->
-                    <div class="container mt-4">
-                        <h4 class="text-white">Comentarios:</h4>
-                        <ul id="commentList" class="list-group"></ul>
-                    </div>
                 </div>
             </div>
         </div>
-        
+        <!-- Footer -->
+        <footer class="bg-dark text-center text-white py-3">
+            <p>&copy; 2025 Foro de Videojuegos. Todos los derechos reservados.</p>
+        </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        
-        <script>
-        function addComment() {
-            let username = document.getElementById("username").value.trim();
-            let commentText = document.getElementById("commentText").value.trim();
-            let commentList = document.getElementById("commentList");
-
-            if (username === "" || commentText === "") {
-                alert("Por favor, ingresa tu nombre y un comentario.");
-                return;
-            }
-
-            let commentItem = document.createElement("li");
-            commentItem.classList.add("list-group-item");
-            commentItem.innerHTML = `<strong>${username}:</strong> ${commentText}`;
-            
-            commentList.appendChild(commentItem);
-
-            document.getElementById("username").value = "";
-            document.getElementById("commentText").value = "";
-        }
-        </script>
     </body>
 </html>
