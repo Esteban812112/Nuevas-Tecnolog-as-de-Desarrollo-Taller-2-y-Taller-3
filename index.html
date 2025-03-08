@@ -5,25 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Foro de Videojuegos">
     <title>Foro de Videojuegos</title>
-    
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0c0c0c;
+            color: #fff;
+            font-family: 'Press Start 2P', cursive;
+        }
+        .navbar {
+            background-color: #1a1a1a;
+        }
+        .masthead {
+            background: url('assets/img/gaming-bg.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .section-heading {
+            color: #ffcc00;
+            text-shadow: 2px 2px 10px rgba(255, 204, 0, 0.8);
+        }
+        .page-section {
+            padding: 60px 0;
+            background-color: #121212;
+        }
+        .bg-light {
+            background-color: #1f1f1f !important;
+        }
+        .btn-primary {
+            background-color: #ff4500;
+            border-color: #ff4500;
+        }
+        .btn-primary:hover {
+            background-color: #cc3700;
+            border-color: #cc3700;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Foro de Videojuegos</a>
+            <a class="navbar-brand" href="#">Foro Gamer</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,171 +65,58 @@
             </div>
         </div>
     </nav>
-
-    <!-- Masthead -->
     <header class="masthead">
         <div class="container">
-            <div class="masthead-subheading">Bienvenido al Foro de Videojuegos</div>
-            <div class="masthead-heading text-uppercase">Un espacio para la comunidad gamer</div>
-            <a class="btn btn-primary btn-xl text-uppercase" href="#historia">Explorar</a>
+            <h1 class="masthead-subheading">Bienvenido al Foro Gamer</h1>
+            <p class="masthead-heading">Un espacio para la comunidad gamer</p>
+            <a class="btn btn-primary btn-xl" href="#historia">Explorar</a>
         </div>
     </header>
-    <!-- Historia -->
-    <section class="page-section bg-light" id="historia">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Historia de los Foros de Videojuegos</h2>
-                <h3 class="section-subheading text-muted">Desde los primeros foros de texto hasta las plataformas modernas.</h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Los foros de videojuegos han sido un pilar fundamental en la comunidad gamer. Desde los primeros foros en la década de 1990, han evolucionado hasta convertirse en plataformas clave para la discusión, el intercambio de información y la creación de comunidades.</p>
-                    <p>Inicialmente, los foros estaban basados en texto y eran accesibles solo a través de redes específicas. Con la llegada de internet, surgieron plataformas como GameFAQs, NeoGAF y Reddit, que dieron un nuevo impulso a las conversaciones sobre videojuegos.</p>
-                </div>
-            </div>
+    <section class="page-section" id="historia">
+        <div class="container text-center">
+            <h2 class="section-heading">Historia de los Foros de Videojuegos</h2>
+            <p>Desde los primeros foros en la década de 1990 hasta las plataformas modernas como Reddit y Discord.</p>
         </div>
     </section>
-
-    <!-- Foros Populares -->
-    <section class="page-section" id="foros-populares">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Foros de Videojuegos Más Populares</h2>
-                <h3 class="section-subheading text-muted">Las plataformas donde los jugadores comparten su pasión.</h3>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-comments fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Reddit</h4>
-                    <p class="text-muted">Subforos como r/gaming y r/gamedev reúnen a miles de jugadores para debatir y compartir contenido.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-gamepad fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">NeoGAF</h4>
-                    <p class="text-muted">Uno de los foros más influyentes en la industria de los videojuegos, con debates profundos sobre el sector.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-users fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Discord</h4>
-                    <p class="text-muted">Aunque no es un foro tradicional, Discord ha reemplazado a muchos foros antiguos con servidores de comunidad interactivos.</p>
-                </div>
-            </div>
+    <section class="page-section bg-light" id="foros-populares">
+        <div class="container text-center">
+            <h2 class="section-heading">Foros Populares</h2>
+            <p>Los foros más influyentes en la comunidad gamer.</p>
+            <ul class="list-unstyled">
+                <li>🔥 Reddit: r/gaming, r/gamedev</li>
+                <li>🎮 NeoGAF y ResetEra</li>
+                <li>💬 Discord y GameFAQs</li>
+            </ul>
         </div>
     </section>
-    <!-- Impacto en la Industria -->
-    <section class="page-section bg-light" id="impacto">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Impacto en la Industria</h2>
-                <h3 class="section-subheading text-muted">Cómo los foros han influenciado el mundo de los videojuegos.</h3>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-lightbulb fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Retroalimentación Directa</h4>
-                    <p class="text-muted">Los desarrolladores utilizan los foros para recibir opiniones y mejorar sus juegos en tiempo real.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-chart-line fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Creación de Tendencias</h4>
-                    <p class="text-muted">Muchas mecánicas y géneros de videojuegos han nacido o se han popularizado gracias a debates en foros.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-headset fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Espacios de Discusión</h4>
-                    <p class="text-muted">Foros como NeoGAF han permitido que desarrolladores y jugadores se conecten de manera única.</p>
-                </div>
-            </div>
+    <section class="page-section" id="impacto">
+        <div class="container text-center">
+            <h2 class="section-heading">Impacto en la Industria</h2>
+            <p>Cómo los foros han cambiado el desarrollo de los videojuegos.</p>
         </div>
     </section>
-
-    <!-- Cultura Gamer -->
-    <section class="page-section" id="cultura">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Cultura Gamer</h2>
-                <h3 class="section-subheading text-muted">Cómo los foros han dado forma a la comunidad de videojuegos.</h3>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-fire fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Memes y Tendencias</h4>
-                    <p class="text-muted">Los memes más icónicos de los videojuegos nacieron en foros y comunidades online.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-trophy fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Torneos y Competencias</h4>
-                    <p class="text-muted">Los foros han sido clave en la organización de torneos y ligas de eSports desde sus inicios.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-users fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Comunidades Activas</h4>
-                    <p class="text-muted">Desde clanes hasta foros exclusivos, la comunidad gamer ha encontrado en los foros un hogar.</p>
-                </div>
-            </div>
+    <section class="page-section bg-light" id="cultura">
+        <div class="container text-center">
+            <h2 class="section-heading">Cultura Gamer</h2>
+            <p>Desde memes hasta torneos, los foros son clave en la comunidad.</p>
         </div>
     </section>
-    <!-- Conclusiones -->
-    <section class="page-section bg-light" id="conclusiones">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Conclusiones</h2>
-                <h3 class="section-subheading text-muted">El futuro de los foros en la comunidad gamer.</h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <p>Los foros han evolucionado desde simples tablones de discusión hasta plataformas avanzadas con impacto en la industria. Aunque las redes sociales han cambiado la forma en que los jugadores interactúan, los foros siguen siendo una fuente clave de información y debate en la comunidad gamer.</p>
-                    <p>Con la llegada de nuevas tecnologías, los foros continuarán adaptándose, ofreciendo nuevas formas de interacción y mejorando la experiencia de los jugadores en línea.</p>
-                </div>
-            </div>
+    <section class="page-section" id="conclusiones">
+        <div class="container text-center">
+            <h2 class="section-heading">Conclusiones</h2>
+            <p>El futuro de los foros en la evolución del gaming.</p>
         </div>
     </section>
-
-    <!-- Nuestro Equipo -->
-    <section class="page-section" id="equipo">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Nuestro Equipo</h2>
-                <h3 class="section-subheading text-muted">Conoce a los creadores de este espacio.</h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 text-center">
-                    <img class="mx-auto rounded-circle mb-3" src="assets/img/team/1.jpg" alt="Esteban Pinzón" width="150">
-                    <h4>🎮 Esteban Pinzón</h4>
-                    <p class="text-muted">Líder del equipo</p>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <img class="mx-auto rounded-circle mb-3" src="assets/img/team/2.jpg" alt="Karolina Suárez" width="150">
-                    <h4>🕹️ Karolina Suárez</h4>
-                    <p class="text-muted">Colaboradora</p>
-                </div>
-            </div>
+    <section class="page-section bg-light" id="equipo">
+        <div class="container text-center">
+            <h2 class="section-heading">Nuestro Equipo</h2>
+            <p>🎮 Esteban Pinzón - Líder del equipo</p>
+            <p>🕹️ Karolina Suárez - Colaboradora</p>
         </div>
     </section>
+    <footer class="bg-dark text-center text-white py-3 mt-5">
+        <p>&copy; 2025 Foro Gamer. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
