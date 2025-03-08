@@ -49,73 +49,13 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Sección de Comentarios -->
-        <div class="container mt-5">
-            <h2 class="text-center">Foro de Videojuegos</h2>
-            <p class="text-center">Comparte tu opinión sobre videojuegos aquí.</p>
-            <div class="mb-3">
-                <input type="text" id="username" class="form-control" placeholder="Tu nombre">
-            </div>
-            <div class="mb-3">
-                <textarea id="commentText" class="form-control" rows="3" placeholder="Escribe tu comentario..."></textarea>
-            </div>
-            <button class="btn btn-primary" onclick="addComment()">Publicar</button>
-            <button class="btn btn-danger" onclick="clearComments()">Borrar Comentarios</button>
-            <div class="mt-4">
-                <h4>Comentarios:</h4>
-                <ul id="commentList" class="list-group"></ul>
-            </div>
-        </div>
-        
         <!-- Footer -->
         <footer class="bg-dark text-center text-white py-3">
             <p>&copy; 2025 Foro de Videojuegos. Todos los derechos reservados.</p>
         </footer>
-        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        
-        <script>
-            function addComment() {
-                let username = document.getElementById("username").value.trim();
-                let commentText = document.getElementById("commentText").value.trim();
-                let commentList = document.getElementById("commentList");
-
-                if (username === "" || commentText === "") {
-                    alert("Por favor, ingresa tu nombre y un comentario.");
-                    return;
-                }
-
-                let commentItem = document.createElement("li");
-                commentItem.classList.add("list-group-item");
-                commentItem.innerHTML = `<strong>${username}:</strong> ${commentText}`;
-                commentList.appendChild(commentItem);
-
-                let comments = JSON.parse(localStorage.getItem("comments")) || [];
-                comments.push({ username, commentText });
-                localStorage.setItem("comments", JSON.stringify(comments));
-
-                document.getElementById("username").value = "";
-                document.getElementById("commentText").value = "";
-            }
-
-            function clearComments() {
-                localStorage.removeItem("comments");
-                document.getElementById("commentList").innerHTML = "";
-            }
-
-            window.onload = function () {
-                let comments = JSON.parse(localStorage.getItem("comments")) || [];
-                let commentList = document.getElementById("commentList");
-                comments.forEach(comment => {
-                    let commentItem = document.createElement("li");
-                    commentItem.classList.add("list-group-item");
-                    commentItem.innerHTML = `<strong>${comment.username}:</strong> ${comment.commentText}`;
-                    commentList.appendChild(commentItem);
-                });
-            };
-        </script>
     </body>
 </html>
